@@ -1,0 +1,137 @@
+
+.container{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+
+}
+@media only screen and (max-width: 1200px){
+    .container{
+        width: 100%;
+    }
+}
+.container .innercontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+@media only screen and (max-width: 1200px){
+    .container{
+        width: 100%;
+    }
+    .container .innercontainer{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+}
+.container .innercontainer .ContentSection{
+    width: auto;
+    height: auto;
+}
+.container .innercontainer .ContentSection h2{
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.container .innercontainer .ContentSection h2 span{
+    color: #5071df;
+}
+
+.container .innercontainer .ContentSection p{
+    font-size: 18px;
+}
+@media only screen and (max-width: 1070px){
+    .container .innercontainer .ContentSection h2{
+        font-size: 40px;
+    }
+    .container .innercontainer .ContentSection p{
+        font-size:  16px;
+    }
+
+}
+@media only screen and (max-width: 930px){
+    .container{
+        height: 600px;
+    }
+    .container .innercontainer{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .container .innercontainer .ContentSection h2{
+        text-align: center;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .container .innercontainer .ContentSection p{
+        text-align: center;
+        font-size:  16px;
+    }
+
+}
+
+.container .innercontainer .form{
+    width: 400px;
+    height: 220px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(92, 92, 92, 0.171);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 600px){
+    .container .innercontainer .form{
+        width: 100%;
+    }
+
+
+    .container .innercontainer .ContentSection h2{
+        font-size: 35px;
+
+    }
+
+}
+.container .innercontainer .form form{
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .innercontainer .form form .inputs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.container .innercontainer .form form .inputs input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border:1px solid #b4b4b4;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #5071df;
+    padding-left: 3px;
+}
+
+.container .innercontainer .form form button{
+    width: 100%;
+    height: 40px;
+    background-color: #5071df;
+    color: #fff;
+    font-size: 18px;
+    border:none;
+    cursor: pointer;
+}
