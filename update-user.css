@@ -1,0 +1,91 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+.container .inner-container-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .inner-container{
+    background: rgba(179, 179, 179, 0.118);
+    box-shadow: 1px 1px 10px rgba(153, 153, 153, 0.371);
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+.container .inner-container .user-photo{
+    width: 150px;
+    height: 150px;
+    border: 10px solid #5071df;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px #999;
+}
+.container .inner-container .user-photo img{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    size: cover;
+}
+.container .inner-container .update-user{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container .inner-container .update-user a{
+    text-decoration: none;
+    color:#5071df;
+}
+.container .inner-container .update-user i{
+    font-size: 30px;
+    padding: 5px;
+    background-color: rgba(182, 180, 180, 0.207);
+    box-shadow: 3px 3px 10px #999;
+    border-radius: 50%;
+}
+.container .inner-container .content{
+    margin-top: 30px;
+}
+.container .inner-container .content .info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.container .inner-container .content .info span{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.container .inner-container .content .info input{
+    padding: 5px 3px;
+    margin-top: -3px;
+    margin-left: 3px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    box-shadow: 1px 1px 5px rgba(153, 153, 153, 0.268);
+    transition: .5s;
+}
+.container .inner-container .content .info input:hover{
+    border-bottom: 1px solid red;
+}
+.container .inner-container .content .info input:hover::placeholder{
+    padding-left: 10px;
+    transition: .5s;
+}
+.container .inner-container .content form button{
+    background-color: rgba(1, 252, 1, 0.481);
+    border: none;
+    padding: 5px 15px;
+    color: #000;
+    margin-top: 20px;
+}
+@media (max-width:338px){
+    .container .inner-container{
+        width: 50%;
+    }
+}
